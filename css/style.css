@@ -1,0 +1,86 @@
+* {
+	font-family: 'Merriweather', serif;
+}
+
+div {
+	border: 1px solid Chocolate;
+}
+
+body {
+	background-color: gray;
+}
+
+header, .quizTitle {
+	text-align: center;
+	background-color: lightgray;
+	margin: 0px;
+}
+
+.quizTitle {
+	padding: 40px 0px 40px;
+}
+
+.answer, #question, #resultsPage {
+	color: black;
+	text-align: center;
+}
+
+.centerArea {
+	visibility: hidden;
+}
+
+#firstQuestion {
+	visibility: visible;
+}
+
+#q1 {
+	visibility: visible;
+}
+
+#firstQuestionImage {
+	visibility: visible;
+	z-index: 20;
+}
+
+#question {
+	width: 300px;
+    height: 100px;
+    padding-top: 50px;
+    margin-left: 360px;
+    margin-top: 200px;
+}
+
+.score {
+	float: right;
+	margin-right: 300px;
+}
+
+button.answers {
+	background: rgb(66, 184, 221);
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.answer {
+	width: 300px;
+    height: 100px;
+    z-index: 100;
+}
+
+.answerBlock {
+	height: 420px;
+	width: 600px;
+	z-index: 2;
+	margin-top: -20px;
+	margin-right: 200px;
+	float: right;
+}
+
+.nextQuestion {
+	background: rgb(28, 184, 65);
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	float: right;
+	margin-right: -500px;
+	margin-top: 100px;
+}

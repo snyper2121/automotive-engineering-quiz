@@ -1,95 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 	<meta charset="UTF-8">
 	<title>AutomotiveEngineeringQuiz</title>
 </head>
 <body>
+	<header>
+		<h2 class="quizTitle">Automotive Engineering Quiz</h2>
+	</header>
+
+	<h2 class="score">Score:</h2>
 	
 	<!-- Questions -->
+	<div class="centerArea">
+		<div id="question">
+			<h3 id="firstQuestion">What is the effect of having too much camber in the tires?</h3>
+			<h3 id="secondQuestion">If the air to fuel mixture in a spark ignition engine is too rich, then air to fuel ratio is about</h3>
+			<h3 id="thirdQuestion">The function of an alternator in an automobile is to:</h3>
+			<h3 id="fourthQuestion">The main function of the intake manifold is that it</h3>
+			<h3 id="fifthQuestion">What is the ideal air to fuel ratio (AFR) in a conventional gas engine?</h3>
+		</div>
 
-	<div id="question">
-		<h3 id="firstQuestion">What is the effect of having too much camber in the tires?</h3>
-		<h3 id="secondQuestion">If the air to fuel mixture in a spark ignition engine is too rich, then air to fuel ratio is about</h3>
-		<h3 id="thirdQuestion">The function of an alternator in an automobile is to:</h3>
-		<h3 id="fourthQuestion">The main function of the intake manifold is that it</h3>
-		<h3 id="fifthQuestion">What is the ideal air to fuel ration (AFR) in a conventional gas engine?</h3>
+		<!-- Images -->
+		<img src="images/camber.jpg" class="firstQuestionImage" style="width:304px;height:228px;">
+
+		<!-- Answers -->
+		<div class="answerBlock">
+			<div class="answer" id="q1">
+				<div class="answer" name="muchTraction">
+					<button class="answers"><p>Too much traction</p></button>
+				</div>
+				<div class="answer" name="tireWear">
+					<button class="answers"><p>Uneven tire wear</p></button>
+				</div>
+				<div class="answer" name="hardSteering">
+					<button class="answers"><p>Hard Steering</p></button>
+				</div>
+				<div class="answer" name="excessiveSteering">
+					<button class="answers"><p>Excessive steering alignment torque</p></button>
+				</div>
+			</div>
+
+			<div class="answer" id="q2">
+				<div class="answer" name="15:1">
+					<button class="answers"><p>15:1</p></button>
+				</div>
+				<div class="answer" name="13:1">
+					<button class="answers"><p>13:1</p></button>
+				</div>
+				<div class="answer" name="17:1">
+					<button class="answers"><p>17:1</p></button>
+				</div>
+				<div class="answer" name="10:1">
+					<button class="answers"><p>10:1</p></button>
+				</div>
+
+			</div>
+
+			<div class="answer" id="q3">
+				<div class="answer" name="converEnginePower">
+					<button class="answers"><p>Partly convert engine power into electric power</p></button>
+				</div>
+				<div class="answer" name="continuallyRecharge">
+					<button class="answers"><p>Continually recharge the battery</p>
+				</div></button>
+				<div class="answer" name="supplyElectricity">
+					<button class="answers"><p>Supply electric power</p></button>
+				</div>
+				<div class="answer" name="convertMechanicalEnergy">
+					<button class="answers"><p>Convert mechanical energy into electrical energy</p></button>
+				</div>
+			</div>
+
+			<div class="answer" id="q4">
+				<div class="answer" name="distributeAirEqually">
+					<button class="answers"><p>Distribute intake air equally to the cylinders</p></button>
+				</div>
+				<div class="answer" name="promotesAirAndFuelMixture">
+					<button class="answers"><p>Promotes the mixture of air and fuel</p></button>
+				</div>
+				<div class="answer" name="reducesIntakeNoise">
+					<button class="answers"><p>Reduces intake noise</p></button>
+				</div>
+				<div class="answer" name="coolsAirTemperature">
+					<button class="answers"><p>Cools the intake air to a suitable temperature</p></button>
+				</div>
+			</div>
+
+			<div class="answer" id="q5">
+				<div class="answer" name="12.3:1">
+					<button class="answers"><p>12.3:1</p></button>
+				</div>
+				<div class="answer" name="15.5:2">
+					<button class="answers"><p>15.5:2</p></button>
+				</div>
+				<div class="answer" name="14.7:1">
+					<button class="answers"><p>14.7:1</p></button>
+				</div>
+				<div class="answer" name="10.5:1">
+					<button class="answers"><p>10.5:1</p></button>
+				</div>
+			</div>
+		</div>
+		<div id="resultsPage" style="display:block;">
+			<h1>Thank you for playing!</h1>
+			
+		</div>
 	</div>
-
-	<!-- Answers -->
-
-	<div class="answer" id="q1">
-		<div class="answer" name="tireWear">
-			<h5>Uneven tire wear</h5>
-		</div>
-		<div class="answer" name="hardSteering">
-			<h5>Hard Steering</h5>
-		</div>
-		<div class="answer" name="excessiveSteering">
-			<h5>Excessive steering alignment torque</h5>
-		</div>
-	</div>
-
-	<div class="answer" id="q2">
-		<div class="answer" name="15:1">
-			<h5>15:1</h5>
-		</div>
-		<div class="answer" name="13:1">
-			<h5>13:1</h5>
-		</div>
-		<div class="answer" name="17:1">
-			<h5>17:1</h5>
-		</div>
-		<div class="answer" name="10:1">
-			<h5>10:1</h5>
-		</div>
-
-	</div>
-
-	<div class="answer" id="q3">
-		<div class="answer" name="converEnginePower">
-			<h5>Partly convert engine power into electric power</h5>
-		</div>
-		<div class="answer" name="continuallyRecharge">
-			<h5>Continually recharge the battery</h5>
-		</div>
-		<div class="answer" name="supplyElectricity">
-			<h5>Supply electric power</h5>
-		</div>
-		<div class="answer" name="convertMechanicalEnergy">
-			<h5>Convert mechanical energy into electrical energy</h5>
-		</div>
-	</div>
-
-	<div class="answer" id="q4">
-		<div class="answer" name="distributeAirEqually">
-			<h5>Distribute intake air equally to the cylinders</h5>
-		</div>
-		<div class="answer" name="promotesAirAndFuelMixture">
-			<h5>Promotes the mixture of air and fuel</h5>
-		</div>
-		<div class="answer" name="reducesIntakeNoise">
-			<h5>Reduces intake noise</h5>
-		</div>
-		<div class="answer" name="coolsAirTemperature">
-			<h5>Cools the intake air to a suitable temperature</h5>
-		</div>
-	</div>
-
-	<div class="answer" id="q5">
-		<div class="answer" name="12.3:1">
-			<h5>12.3:1</h5>
-		</div>
-		<div class="answer" name="15.5:2">
-			<h5>15.5:2</h5>
-		</div>
-		<div class="answer" name="14.7:1">
-			<h5>14.7:1</h5>
-		</div>
-		<div class="answer" name="10.5:1">
-			<h5>10.5:1</h5>
-		</div>
-	</div>
-
+	<footer>
+		<button class="nextQuestion">Next</button>
+	</footer>
 </body>
 </html>
