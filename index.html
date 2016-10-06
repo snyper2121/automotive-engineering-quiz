@@ -14,106 +14,48 @@
 		<h2 class="quizTitle">Automotive Engineering Quiz</h2>
 	</header>
 
-	<h2 class="score">Score:</h2>
+	<h2 class="score">Score: <span id="score-number"></span></h2>
 	
 	<!-- Questions -->
 	<div class="centerArea">
 		<div id="question">
-			<h3 id="firstQuestion">What is the effect of having too much camber in the tires?</h3>
-			<h3 id="secondQuestion">If the air to fuel mixture in a spark ignition engine is too rich, then air to fuel ratio is about</h3>
-			<h3 id="thirdQuestion">The function of an alternator in an automobile is to:</h3>
-			<h3 id="fourthQuestion">The main function of the intake manifold is that it</h3>
-			<h3 id="fifthQuestion">What is the ideal air to fuel ratio (AFR) in a conventional gas engine?</h3>
+			<p id="firstQuestion">What is the effect of having too much camber in the tires?</p>
+			
 		</div>
 
 		<!-- Images -->
-		<img src="images/camber.jpg" class="firstQuestionImage" style="width:304px;height:228px;">
+		<img src="images/camber.jpg" class="firstQuestionImage">
 
 		<!-- Answers -->
 		<div class="answerBlock">
-			<div class="answer" id="q1">
-				<div class="answer" name="muchTraction">
-					<button class="answers"><p>Too much traction</p></button>
+			<div class="answer" id="answerOptions">
+				<div class="answer">
+					<button class="answers" id="a"><p>Too much traction</p></button>
 				</div>
-				<div class="answer" name="tireWear">
-					<button class="answers" id=""><p>Uneven tire wear</p></button>
+				<div class="answer">
+					<button class="answers" id="b"><p>Uneven tire wear</p></button>
 				</div>
-				<div class="answer" name="hardSteering">
-					<button class="answers"><p>Hard Steering</p></button>
+				<div class="answer">
+					<button class="answers" id="c"><p>Hard Steering</p></button>
 				</div>
-				<div class="answer" name="excessiveSteering">
-					<button class="answers"><p>Excessive steering alignment torque</p></button>
-				</div>
-			</div>
-
-			<div class="answer" id="q2">
-				<div class="answer" name="15:1">
-					<button class="answers"><p>15:1</p></button>
-				</div>
-				<div class="answer" name="13:1">
-					<button class="answers"><p>13:1</p></button>
-				</div>
-				<div class="answer" name="17:1">
-					<button class="answers"><p>17:1</p></button>
-				</div>
-				<div class="answer" name="10:1">
-					<button class="answers"><p>10:1</p></button>
-				</div>
-
-			</div>
-
-			<div class="answer" id="q3">
-				<div class="answer" name="converEnginePower">
-					<button class="answers"><p>Partly convert engine power into electric power</p></button>
-				</div>
-				<div class="answer" name="continuallyRecharge">
-					<button class="answers"><p>Continually recharge the battery</p>
-				</div></button>
-				<div class="answer" name="supplyElectricity">
-					<button class="answers"><p>Supply electric power</p></button>
-				</div>
-				<div class="answer" name="convertMechanicalEnergy">
-					<button class="answers"><p>Convert mechanical energy into electrical energy</p></button>
-				</div>
-			</div>
-
-			<div class="answer" id="q4">
-				<div class="answer" name="distributeAirEqually">
-					<button class="answers"><p>Distribute intake air equally to the cylinders</p></button>
-				</div>
-				<div class="answer" name="promotesAirAndFuelMixture">
-					<button class="answers"><p>Promotes the mixture of air and fuel</p></button>
-				</div>
-				<div class="answer" name="reducesIntakeNoise">
-					<button class="answers"><p>Reduces intake noise</p></button>
-				</div>
-				<div class="answer" name="coolsAirTemperature">
-					<button class="answers"><p>Cools the intake air to a suitable temperature</p></button>
-				</div>
-			</div>
-
-			<div class="answer" id="q5">
-				<div class="answer" name="12.3:1">
-					<button class="answers"><p>12.3:1</p></button>
-				</div>
-				<div class="answer" name="15.5:2">
-					<button class="answers"><p>15.5:2</p></button>
-				</div>
-				<div class="answer" name="14.7:1">
-					<button class="answers"><p>14.7:1</p></button>
-				</div>
-				<div class="answer" name="10.5:1">
-					<button class="answers"><p>10.5:1</p></button>
+				<div class="answer">
+					<button class="answers" id="d"><p>Excessive steering alignment torque</p></button>
 				</div>
 			</div>
 		</div>
+		<div id="question-number">
+			
+			<p id="numbered-questions">Question# <span id="current-question-number"></span> of 5</p>
+
+		</div>
 		<div id="resultsPage" style="display:block;">
-			<h1>Thank you for playing!</h1>
+			<!-- <h1>Thank you for playing!</h1> -->
 			
 		</div>
 	</div>
 	<footer>
-		<button class="nextQuestion">Next</button>
+		
 	</footer>
+	<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
