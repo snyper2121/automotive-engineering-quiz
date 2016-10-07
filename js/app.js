@@ -18,8 +18,8 @@ $( document ).ready(function() {
 	  	d:"Excessive steering alignment torque",
 		rightAnswer: "b",
 	  	keyName: "valuename",
-	  	questionNumber: 1
-	  	//image: //write the image url for each one
+	  	questionNumber: 1,
+	  	imageAddress: "images/camber.jpg"
 	},
 	{
 		question:"If the air to fuel mixture in a spark ignition engine is too rich, then air to fuel ratio is about",
@@ -29,7 +29,8 @@ $( document ).ready(function() {
 	  	d:"10:1",
 		rightAnswer: "d",
 	  	keyName: "valuename",
-	  	questionNumber: 2
+	  	questionNumber: 2,
+	  	imageAddress: "images/air-fuel.jpg"
 	},
 	{
 		question:"The function of an alternator in an automobile is to:",
@@ -39,7 +40,8 @@ $( document ).ready(function() {
 	  	d:"Convert mechanical energy into electrical energy",
 		rightAnswer: "b",
 	  	keyName: "valuename",
-	  	questionNumber: 3
+	  	questionNumber: 3,
+	  	imageAddress: "images/alternator.jpg"
 	},
 	{
 		question:"The main function of the intake manifold is that it",
@@ -49,7 +51,8 @@ $( document ).ready(function() {
 	  	d:"Cools the intake air to a suitable temperature",
 		rightAnswer: "a",
 	  	keyName: "valuename",
-	  	questionNumber: 4
+	  	questionNumber: 4,
+	  	imageAddress: "images/intake-manifold.jpg"
 	},
 	{
 		question:"What is the ideal air to fuel ratio (AFR) in a conventional gas engine?",
@@ -59,7 +62,8 @@ $( document ).ready(function() {
 	  	d:"10.5:1",
 		rightAnswer: "c",
 	  	keyName: "valuename",
-	  	questionNumber: 5
+	  	questionNumber: 5,
+	  	imageAddress: "images/tuning.jpg"
 	}
 	];
 
@@ -73,6 +77,7 @@ $( document ).ready(function() {
 		document.getElementById('c').innerHTML = questionArray[index].c;
 		document.getElementById('d').innerHTML = questionArray[index].d;
 		document.getElementById('current-question-number').innerHTML = questionArray[index].questionNumber;
+		$("#currentQuestionImage").attr("src", questionArray[index].imageAddress);
 };
 		
 	var gameState = {

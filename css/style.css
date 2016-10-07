@@ -41,11 +41,9 @@ header, .quizTitle {
 	visibility: visible;
 }
 
-.firstQuestionImage {
+#currentQuestionImage {
 	visibility: visible;
-	z-index: 20;
-	width:600px;
-	height:228px;
+	z-index: 20;s
 	margin-left: 200px;
     padding-top: 100px;
 }
